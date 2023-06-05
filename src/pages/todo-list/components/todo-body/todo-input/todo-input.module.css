@@ -1,0 +1,14 @@
+.todoInputForm {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px auto;
+}
+
+.checkboxContainer {
+  justify-self: center;
+}
+
+.titleContainer {
+  justify-self: start;
+  width: 100%;
+}

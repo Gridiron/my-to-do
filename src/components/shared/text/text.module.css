@@ -1,0 +1,19 @@
+.text {
+  padding: 5px;
+}
+
+.secondary {
+  color: #a9a9a9;
+  text-align: center;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.notCrossed {
+  text-decoration: none;
+}
+
+.primary {
+}

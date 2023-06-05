@@ -1,0 +1,25 @@
+.listItem {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px auto 50px;
+}
+
+.checkboxContainer {
+  justify-self: center;
+}
+
+.titleContainer {
+  justify-self: start;
+  width: 100%;
+}
+
+.removeButtonContainer {
+  justify-self: center;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

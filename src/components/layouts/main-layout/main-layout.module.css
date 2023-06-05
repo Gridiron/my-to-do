@@ -1,0 +1,32 @@
+.backgroundTop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  background-color: #0000ff;
+}
+
+.backgroundBottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  background-color: #f2f2f2;
+}
+
+.foreground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 35%;
+  grid-template-rows: 20% 55% 25%;
+}

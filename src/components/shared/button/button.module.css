@@ -1,0 +1,36 @@
+.button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-size: var(--font-size-s);
+  font-family: var(--font-family-primary);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.icon {
+  color: #a9a9a9;
+}
+
+.icon:hover {
+  color: #2f4f4f;
+}
+
+.textButton {
+  text-align: center;
+}
+
+.textButton:hover {
+  color: #2f4f4f;
+}
+
+.notActive {
+  color: #a9a9a9;
+}
+
+.isActive {
+  color: #0000ff;
+}

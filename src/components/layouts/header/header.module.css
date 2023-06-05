@@ -1,0 +1,6 @@
+.header {
+  display: grid;
+  align-items: end;
+  justify-content: start;
+  width: 100%;
+}

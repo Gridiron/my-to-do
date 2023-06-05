@@ -1,0 +1,19 @@
+.toolbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.counterContainer {
+  padding-left: 5px;
+}
+
+.clearCompletedContainer {
+  padding-right: 5px;
+}
+
+.filterButtonsContainer {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 5px;
+}
