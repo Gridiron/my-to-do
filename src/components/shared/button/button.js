@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import css from "./button.module.css";
 import classNames from "classnames";
+import { DATA_TEST_IDS } from "constants/data-test-ids.const.js";
 
 export const Button = ({ onClick, children, icon, isActive }) => {
   const handleOnClick = () => onClick();
@@ -10,7 +11,11 @@ export const Button = ({ onClick, children, icon, isActive }) => {
   );
 
   return (
-    <button className={css.button} onClick={handleOnClick}>
+    <button
+      className={css.button}
+      onClick={handleOnClick}
+      data-testid={DATA_TEST_IDS.BUTTON}
+    >
       {icon && <i className={css.icon}>{icon}</i>}
       {children && <span className={classes}>{children}</span>}
     </button>

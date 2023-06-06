@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="backgroundTop"
+  />,
+  <div
+    className="backgroundBottom"
+  />,
+  <div
+    className="foreground"
+  >
+    <div
+      className="header"
+    >
+      <h1
+        className="header"
+      >
+        TODO
+      </h1>
+    </div>
+    <div
+      className="body"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="card"
+          data-testid="card"
+        >
+          <form
+            className="todoInputForm"
+            data-testid="form"
+            onSubmit={[Function]}
+          >
+            <div
+              className="checkboxContainer"
+            >
+              <div
+                className="customCheckbox"
+              >
+                <label
+                  className="label"
+                  data-testid="checkboxLabel"
+                >
+                  <input
+                    checked={false}
+                    className="checkbox"
+                    data-testid="checkbox"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  <span
+                    className="checkMark"
+                    data-testid="checkmark"
+                  />
+                </label>
+              </div>
+            </div>
+            <div
+              className="titleContainer"
+            >
+              <input
+                className="input"
+                onChange={[Function]}
+                placeholder="Enter title for you todo"
+                type="text"
+                value=""
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      className="footer"
+    >
+      <div>
+        <div
+          className="card"
+          data-testid="card"
+        >
+          <div
+            className="toolbar"
+          >
+            <div
+              className="counterContainer"
+            >
+              <div
+                className="notCrossed secondary"
+              >
+                0
+                 items left
+              </div>
+            </div>
+            <div
+              className="filterButtonsContainer"
+            >
+              <button
+                className="button"
+                data-testid="button"
+                onClick={[Function]}
+              >
+                <span
+                  className="textButton active"
+                >
+                  <div
+                    className="notCrossed undefined"
+                  >
+                    All
+                  </div>
+                </span>
+              </button>
+              <button
+                className="button"
+                data-testid="button"
+                onClick={[Function]}
+              >
+                <span
+                  className="textButton notActive"
+                >
+                  <div
+                    className="notCrossed undefined"
+                  >
+                    Completed
+                  </div>
+                </span>
+              </button>
+              <button
+                className="button"
+                data-testid="button"
+                onClick={[Function]}
+              >
+                <span
+                  className="textButton notActive"
+                >
+                  <div
+                    className="notCrossed undefined"
+                  >
+                    Active
+                  </div>
+                </span>
+              </button>
+            </div>
+            <div
+              className="clearCompletedContainer"
+            >
+              <button
+                className="button"
+                data-testid="button"
+                onClick={[Function]}
+              >
+                <span
+                  className="textButton notActive"
+                >
+                  <div
+                    className="notCrossed undefined"
+                  >
+                    Clear completed
+                  </div>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          className="notCrossed secondary"
+        >
+          Drag and drop to reorder
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

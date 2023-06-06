@@ -3,6 +3,7 @@ import { Checkbox, TextInput, Card } from "components/shared/index";
 import css from "./todo-input.module.css";
 import { useState } from "react";
 import { addItem } from "store/slices/todo.slice";
+import { DATA_TEST_IDS } from "constants/data-test-ids.const";
 
 const TodoInput = () => {
   const [isCompleted, setIsCompleted] = useState(false);
@@ -31,7 +32,11 @@ const TodoInput = () => {
 
   return (
     <Card>
-      <form className={css.todoInputForm} onSubmit={onSubmitHandler}>
+      <form
+        className={css.todoInputForm}
+        onSubmit={onSubmitHandler}
+        data-testid={DATA_TEST_IDS.FORM}
+      >
         <div className={css.checkboxContainer}>
           <Checkbox
             checked={isCompleted}

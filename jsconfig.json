@@ -4,6 +4,11 @@
     "target": "ESNext",
     "module": "ESNext"
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "src/__mocks__",
+    "jest.config.js",
+    "data-test-ids.const.js"
+  ],
   "exclude": ["node_modules", "public"]
 }

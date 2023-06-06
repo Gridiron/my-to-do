@@ -12,6 +12,5 @@ export const Text = ({ children, type, crossed }) => {
 Text.propTypes = {
   children: PropTypes.string.isRequired,
   type: PropTypes.oneOf([TEXT_TYPE.PRIMARY, TEXT_TYPE.SECONDARY]),
-  onChangeHandler: PropTypes.func.isRequired,
   crossed: PropTypes.bool,
 };
