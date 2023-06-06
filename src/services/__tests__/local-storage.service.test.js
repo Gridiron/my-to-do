@@ -1,26 +1,26 @@
-import { LocalStorageService } from "../local-storage.service";
+import { LocalStorageService } from '../local-storage.service';
 
-describe("LocalStorageService", () => {
+describe('LocalStorageService', () => {
   afterEach(() => {
-    localStorage.clear(); // Clear local storage after each test
+    localStorage.clear();
   });
 
-  test("should save data to local storage", () => {
-    const setItemMock = jest.spyOn(Storage.prototype, "setItem");
+  test('should save data to local storage', () => {
+    const setItemMock = jest.spyOn(Storage.prototype, 'setItem');
     setItemMock.mockImplementation(() => {});
-    const key = "myKey";
-    const data = { name: "John", age: 30 };
+    const key = 'myKey';
+    const data = { name: 'John', age: 30 };
 
     LocalStorageService.saveData(key, data);
 
     expect(setItemMock).toHaveBeenCalledWith(key, JSON.stringify(data));
 
-    setItemMock.mockRestore(); // Restore the original localStorage.setItem function
+    setItemMock.mockRestore();
   });
 
-  test("should retrieve data from local storage", () => {
-    const key = "myKey";
-    const data = { name: "John", age: 30 };
+  test('should retrieve data from local storage', () => {
+    const key = 'myKey';
+    const data = { name: 'John', age: 30 };
     localStorage.setItem(key, JSON.stringify(data));
 
     const retrievedData = LocalStorageService.getData(key);
